@@ -30,7 +30,7 @@ struct Coro
 	jmp_buf co_env;
 };
 
-void _start_coro()
+static void _start_coro()
 {
 	current_coro->co_fun(current_coro->co_arg);
 	longjmp(main_env, CORO_FUN_END);

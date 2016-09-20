@@ -2,7 +2,7 @@
 用c语言setjmp和longjmp实现的一个最基本的协程，详见[blog](http://www.cnblogs.com/adinosaur/p/5889014.html)。
 
 ## Usage
-模块只有三个接口：
+使用包含头文件`#include"Coro.h"`，模块只有三个接口：
 
 1. coro_new创建一个协程。
 2. coro_yield将控制返回给主（调度）协程。
